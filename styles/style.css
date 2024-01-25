@@ -15,7 +15,7 @@
 @media (max-width: 800px) {
   main{
     flex-direction: column;
-   
+    gap: 4rem;
   }
 
 
@@ -26,6 +26,17 @@
     box-sizing: border-box;
   }
 
+
+  .texto{
+    width: 80% !important;
+    align-self: center;
+    margin-bottom: 1rem;
+
+    img{
+      display: none;
+    }
+  }
+
 }
 
 
@@ -33,7 +44,7 @@
 main {
   background-color: var(---cor-background);
   display: flex;
-  
+  justify-content: space-evenly;  
 }
 
 .header {
@@ -105,52 +116,74 @@ main {
 }
 
 
-.menu__texto {
+.texto {
+
   background-color: white;
-  box-sizing: border-box;
   width: 30%;
-  border-radius: 32px;
+  border-radius: 2.5rem;
+  margin-top: 20px;
   font-size: 32px;
   font-family: "Inter";
   font-weight: 400;
   box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+  padding-top: 2rem;
 
+  
+  
+}
+
+.texto__inicio{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  background-color: transparent ;
+  justify-content: center;
+  align-items: center;
 
-  justify-content: space-between;
-  gap: 67vh;
-
-  .menu__texto__inicio{
-
-
-    h2{
-        font-size: 24px;
-        color: #343A40;
-    }
-    p{
-        font-size: 16px;
-        color: #495057;
-    }
-  }
-  .menu__texto__resultado{
-
+  h2{
     
-    .menu__texto__resultado__paragrafo{
-        background-color: white;
-        color: #495057;
-        font-size: 24px;
-        width: 100%;
+      background-color: transparent ;
+      font-size: 24px;
+      color: #343A40;
+  
+  }
+  p{
+    background-color: transparent ;
+      font-size: 16px;
+      color: #495057;
+     
+  }
+  img{
+    background-color: transparent ;
+  }
+}
 
-    }
+.texto__resultado{
 
-    .menu__texto__resultado__botao{ 
-        width: 50%;
-        height: 4rem;
-        border-radius: 24px ;
-        color: #0a3871;
-        width: auto;
-       
-    }
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 70vh;
+  align-items: center;
+  
+
+ 
+  .texto__resultado__paragrafo{
+      background-color: white;
+      color: #495057;
+      font-size: 24px;
+
+  }
+
+  .texto__resultado__botao{ 
+      width: 50%;
+      height: 3rem;
+      margin-bottom: 1.5rem;
+      border-radius: 24px ;
+      background-color: transparent;
+      color: #0a3871; 
+    
+ 
   }
 }
