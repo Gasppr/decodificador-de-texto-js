@@ -39,6 +39,12 @@
 
 }
 
+@media (max-width: 500px){
+
+  .rodape{
+    font-size: 16px !important;
+  }
+}
 
 
 main {
@@ -185,5 +191,37 @@ main {
       color: #0a3871; 
     
  
+  }
+}
+
+.rodape{
+
+  font-size: 24px;
+  font-family: "Inter";
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  height: 15vh;
+  background-color: #0a3871;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  h3{
+    margin-top: 1rem;
+    background-color: transparent;
+  }
+  a{
+    background-color: transparent;
+  }
+ 
+}
+
+.icones{
+  background-color: transparent;
+
+  img{
+    background-color: transparent;
   }
 }
