@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decoficador JS</title>
     <link rel="stylesheet" href="styles/style.css" />
+  
   </head>
   <body>
     <main>
@@ -17,9 +18,7 @@
         <!--Input-->
 
         <section class="criptografador__input">
-          <textarea name="" id="" cols="60" rows="10">
-Digite seu texto</textarea
-          >
+          <textarea name="texto__input" id="texto" placeholder="Digite seu texto" cols="50" rows="10"></textarea>
         </section>
 
         <section class="criptografador__botoes">
@@ -31,24 +30,24 @@ Digite seu texto</textarea
           </p>
 
           <div class="botoes">
-            <button class="criptografar">Criptografar</button>
-            <button class="descriptografar">Descriptografar</button>
+            <button class="criptografar" onclick="criptografar()">Criptografar</button>
+            <button class="descriptografar" onclick="descriptografar()">Descriptografar</button>
           </div>
         </section>
       </div>
 
       <div class="texto">
        
-        <div class="texto__inicio">
-          <img  src="assets/High quality products 1 1.svg" alt="" />
+        <div id="entrada" class="texto__inicio">
+          <img  src="assets/High quality products 1 1.svg" alt="Desenho de uma pessoa com uma lupa" />
           <h2 >Nenhuma mensagem encontrada</h2>
           <p >Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
 
-        <div hidden class="texto__resultado">
-          <p hidden="texto__resultado__paragrafo">texto</p>
+        <div id="resultado" class="texto__resultado">
           
-          <button hidden class="texto__resultado__botao">Copiar</button>
+          <p id="texto__resultado" class="texto__resultado__paragrafo"></p>
+          <button id="botao__resultado" class="texto__resultado__botao" onclick="copiarTexto()">Copiar</button>
 
         </div>
       </div>
@@ -63,5 +62,7 @@ Digite seu texto</textarea
           <a href="https://www.linkedin.com/in/paulo-roberto-fullstack"><img src="assets/linkedin.png" alt="icone do Linkedin"></a>
         </div>
    </footer>
+   <script src="js/app.js"></script>
   </body>
+
 </html>

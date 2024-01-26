@@ -133,7 +133,7 @@ main {
   font-weight: 400;
   box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
   padding-top: 2rem;
-
+ 
   
   
 }
@@ -168,18 +168,22 @@ main {
 .texto__resultado{
 
   background-color: transparent;
-  display: flex;
+  display: none;
   flex-direction: column;
-  gap: 70vh;
+  gap: 5vh;
   align-items: center;
-  
+  word-wrap: break-word;
+
 
  
   .texto__resultado__paragrafo{
       background-color: white;
       color: #495057;
       font-size: 24px;
-
+      align-content: center;
+      padding-left: 30px;
+      padding-right: 30px   ;
+      word-break: break-all;
   }
 
   .texto__resultado__botao{ 
@@ -221,6 +225,8 @@ main {
 .icones{
   background-color: transparent;
 
+  display: flex;
+  gap: 1rem;
   img{
     background-color: transparent;
   }
